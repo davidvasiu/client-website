@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--Author: David Vasiu-->
+<!--This is the Photo Gallery page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <!--This is the little icon on the tabs in the browser-->
+    <link rel="icon" href="images/miniLogo.JPG">
+
+    <!--Beginning of bxSlider plugin -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <!--End of bxSlider plugin -->
+
+    <script src="galleryScript.js"></script>
+    <link rel="stylesheet" href="assignmentStyle.css" />
+    </head>
+    <body>
+        <header><!--This header contains the navigation bar and its links to different pages -->
+            <div class="container">
+                <a href="index.html" >
+                    <img src="images/logo.png" id="logo" alt="Logo Image of Vasiu Construction"><!--Logo image (Vasiu Construction) -->
+                </a>
+                <nav>
+                    <ul>
+                        <li><a class="intro" href="index.html">HOME</a></li>
+                        <li><a class="intro" href="gallery.html">GALLERY</a></li>
+                        <li><a class="intro" href="estimates.html">ESTIMATES</a></li>
+                        <li><a class="intro" href="about.html">ABOUT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <p id="showCase"><span class="impact3">Showcase</span> Gallery</p>
+            <table id="galleryTable">
+                <tr>
+                    <!--This is the section with pictures about outside -->
+                    <td>
+                        <div class="heading">OUTSIDE</div>
+                        <div class="imageGroup">
+                            <ul class="imagebxSlider">
+                                <!--Using guideline G196: Using a text alternative on one item within a group of images that describes all the images in the group-->
+                                <li><img src="images/outside/out1.jpg" class="imgGroup" alt="Outside example images"></li>
+                                <li><img src="images/outside/out2.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/outside/out3.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/outside/out4.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/outside/out9.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/outside/out6.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/outside/out7.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/outside/out8.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/outside/out5.jpg" class="imgGroup" alt=""></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <!--This is the section with pictures about bedrooms -->
+                    <td>
+                        <div class="heading">BEDROOMS</div>
+                        <div class="imageGroup">
+                            <ul class="imagebxSlider">
+                                <!--Using guideline G196: Using a text alternative on one item within a group of images that describes all the images in the group-->
+                                <li><img src="images/bedroom/b1.jpg" class="imgGroup" alt="Bedroom examples images"></li>
+                                <li><img src="images/bedroom/b2.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/bedroom/b3.jpg" class="imgGroup" alt=""></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!--Start of a new row in gallery of bxSliders-->
+                <tr>
+                    <!--This is the section with pictures about bathrooms -->
+                    <td>
+                        <div class="heading">BATHROOMS</div>
+                        <div class="imageGroup">
+                            <ul class="imagebxSlider">
+                                <!--Using guideline G196: Using a text alternative on one item within a group of images that describes all the images in the group-->
+                                <li><img src="images/bathroom/b4.jpg" class="imgGroup" alt="Bathroom example images"></li>
+                                <li><img src="images/bathroom/b2.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/bathroom/b3.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/bathroom/b1.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/bathroom/b5.jpg" class="imgGroup" alt=""></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <!--This is the section with pictures about kitchen/living rooms -->
+                    <td>
+                        <div class="heading">KITCHEN/LIVING</div>
+                        <div class="imageGroup">
+                            <ul class="imagebxSlider">
+                                <!--Using guideline G196: Using a text alternative on one item within a group of images that describes all the images in the group-->
+                                <li><img src="images/kitchenLiving/k1.jpg" class="imgGroup" alt="Kitchen and Living room example images"></li>
+                                <li><img src="images/kitchenLiving/k7.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/kitchenLiving/k3.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/kitchenLiving/k4.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/kitchenLiving/k5.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/kitchenLiving/k6.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/kitchenLiving/k2.jpg" class="imgGroup" alt=""></li>
+                                <li><img src="images/kitchenLiving/k8.jpg" class="imgGroup" alt=""></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer><!--The black footer at the bottom with info to contact Vasiu Construction -->
+            <ul>
+                <li>Phone: (828) 324-3223 </li>
+                <li>Email: Dvasiu@uncc.edu</li>
+                <li>Find us: Hickory, NC 28602</li>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--Author: David Vasiu-->
+<!--This is the About page-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+        <!--This is the little icon on the tabs in the browser-->
+        <link rel="icon" href="images/miniLogo.JPG">
+        <link rel="stylesheet" href="assignmentStyle.css" />
+        <!--helped me figure out how to use the scripts up here in right order, and that I needed a jquery one for ajax: https://stackoverflow.com/questions/17050581/uncaught-referenceerror-is-not-defined -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="aboutScript.js"></script>
+    </head>
+    <body>
+        <header><!--This header contains the navigation bar and its links to different pages -->
+            <div class="container">
+                <a href="index.html" >
+                    <img src="images/logo.png" id="logo" alt="Logo Image of Vasiu Construction"><!--Logo image (Vasiu Construction) -->
+                </a>
+                <nav>
+                    <ul>
+                        <li><a class="intro" href="index.html">HOME</a></li>
+                        <li><a class="intro" href="gallery.html">GALLERY</a></li>
+                        <li><a class="intro" href="estimates.html">ESTIMATES</a></li>
+                        <li><a class="intro" href="about.html">ABOUT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <p id="showCase">About <span class="impact3">Us</span></p><!--This is the 'About us' section header-->
+            <table id="table1"><!--This contains the three sections that describes about Vasiu Construction, inculding images text header and body -->
+                <tr>
+                    <!-- This is where the images go, its being populated by an ajax request. -->
+                    <!-- source of first image: Icons made by <a href='https://www.freepik.com/photos/background'>Background photo created by wirestock - www.freepik.com</a> -->
+                    <!-- Source of second image: <a href='https://www.freepik.com/photos/construction'>Construction photo created by welcomia - www.freepik.com</a>-->
+                    <!-- Source of third image: <a href='https://www.freepik.com/photos/love'>Love photo created by senivpetro - www.freepik.com</a> -->
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- This is where the header goes, its being populated by an ajax request. -->
+                    <th>
+                    </th>
+                </tr>
+                <tr>
+                    <!-- This is where the description goes, its being populated by an ajax request. -->
+                    <th>
+                    </th>
+                </tr>
+            </table>
+        </main>
+        <footer><!--The black footer at the bottom with info to contact Vasiu Construction -->
+            <ul>
+                <li>Phone: (828) 324-3223 </li>
+                <li>Email: Dvasiu@uncc.edu</li>
+                <li>Find us: Hickory, NC 28602</li>
+            </ul>
+        </footer>
+    </body>
+</html>

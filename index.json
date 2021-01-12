@@ -1,0 +1,21 @@
+{"vasiu":[
+	{
+		"description": " Vasiu Construction has been in the business for almost 15 years! There is reliability that has been tested and tried. Over the years we have found what works and what doesn't.",
+		"imageVector": "images/reliable.png",
+		"header": "Reliability",
+		"alt": "reliabilityVector"
+	},
+	{
+		"description": "Customize your own home! How you want your home built is how we will make it. Ever wanted a house to look like the homes on the beach, we can make it! Any type or configuration can be made!",
+		"imageVector": "images/cust.png",
+		"header": "Customization",
+		"alt": "customizationVector"
+	},
+	{
+		"description": "It's easier than ever to know (ballpark) how much you will be spending with Vasiu Construction! Just use our in-house estimate calculator to see how much your new dream home will cost! (roughly) ",
+		"imageVector": "images/est.png",
+		"header": "Affordability",
+		"alt": "affordableVector"
+	}
+
+]}

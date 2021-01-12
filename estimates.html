@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--Author: David Vasiu-->
+<!--This is the Estimates page-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Estimates</title>
+        <!--This is the little icon on the tabs in the browser-->
+        <link rel="icon" href="images/miniLogo.JPG">
+
+        <!-- Datepicker widget beginning -->
+        <!--Used this stylesheet below to help to smooth out look of date picker, taken from here:https://stackoverflow.com/questions/10561137/why-my-datepicker-looks-so-weired/34632101  -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script  src="date/jquery-3.5.1.min.js"></script>
+        <script  src="date/jquery-ui.min.js"></script>
+        <!-- Datepicker widget end -->
+
+        <!-- SweetAlert2 beginning, help from here: https://sweetalert2.github.io/#download -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <!-- SweetAlert2 end-->
+
+        <link rel="stylesheet" href="assignmentStyle.css" />
+        <script src="assignmentScript.js"></script>
+    </head>
+    <body>
+        <header><!--This header contains the navigation bar and its links to different pages -->
+            <div class="container">
+                <a href="index.html" >
+                    <img src="images/logo.png" id="logo" alt="Logo Image of Vasiu Construction"><!--Logo image (Vasiu Construction) -->
+                </a>
+                <nav>
+                    <ul>
+                        <li><a class="intro" href="index.html">HOME</a></li>
+                        <li><a class="intro" href="gallery.html">GALLERY</a></li>
+                        <li><a class="intro" href="estimates.html">ESTIMATES</a></li>
+                        <li><a class="intro" href="about.html">ABOUT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <p id="showCase"><span class="impact3">Estimate</span> Calculator</p>
+            <h1>Please enter the necessary info</h1>
+            <form id="estCalc">
+                    <!--This is where the user is asked about the land specs -->
+                    <h2>Land</h2>
+                    <div class="ques">
+                        <!--asks user how large the lot is in acres-->
+                        <label for="acreage" class="labels">Acreage of land</label>
+                        <input type="text" id="acreage" class="input" placeholder="i.e 1.5" ><br>
+                    </div>
+                    <div class="ques">
+                        <!--asks user if the lot has been cleared, aka the lot has no trees or bushes in the way of building a house -->
+                        <label for="lotYN" class="labels">Lot Clear?</label>
+                        <input type="text" id="lotYN" class="input" placeholder="i.e yes or no" ><br>
+                    </div>
+
+                    <!--This is where the user is asked about the house specs they are interested in-->
+                    <h2>House specs</h2>
+                    <div class="ques"><!--asks for number of bedrooms in the house-->
+                        <label for="numBed" class="labels">Number of bedrooms</label>
+                        <input type="number" id="numBed" class="input"><br>
+                    </div>
+                    <div class="ques">
+                        <!--asks user to enter number of full baths they want, with bath or shower included, and also half baths-->
+                        <label for="numBath" class="labels">Number of bathrooms</label>
+                        <input type="text" id="numBath" class="input"><br>
+                    </div>
+                    <div class="ques">
+                        <!--asks user to enter in number of total square feet in house -->
+                        <label for="sqrFoot" class="labels">Number of square feet</label>
+                        <input type="text" id="sqrFoot" class="input" ><br>
+                    </div>
+                    <div class="ques">
+                        <!--This is where the user is asked to choose the size of garage from a drop down menu -->
+                        <label for="cars" class="labels">Size of Garage (car)</label>
+                        <select name="cars" id="cars" class="input" >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="ques1">
+                        <input type="button" id="calc" value="Calculate">
+                        <input type="text" id="total" class="input" value="">
+                    </div>
+
+                    <!--This the part of the calculator that asks for customers contact info to be reached back-->
+                    <h2>Contact Info</h2>
+                    <div class="ques">
+                        <!--asking for user to input first name -->
+                        <label id="firstName" for="Fname" class="labels">First name (required)</label>
+                        <input type="text" id="Fname" class="input" required><br>
+                    </div>
+                    <div class="ques">
+                        <!--asking for user to input last name -->
+                        <label id="lastName" for="Lname" class="labels">Last name (required)</label>
+                        <input type="text" id="Lname"  class="input" required><br>
+                    </div>
+                    <div class="ques">
+                        <!--asking for user to input phone number -->
+                        <label for="number" class="labels">Phone number</label>
+                        <input type="tel" id="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="input" placeholder="i.e 828-234-3823"><br>
+                    </div>
+                    <!-- some help from here: https://stackoverflow.com/questions/29286682/html-email-validation-after-the -->
+                    <div class="ques">
+                        <!--asking for user to input email -->
+                        <label id="emailSubmit" for="email" class="labels">Email (required)</label>
+                        <input type="email" id="email" class="input" placeholder="i.e youname@email.com" required><br>
+                    </div>
+                    <div class="ques">
+                        <label class="labels">Date:</label>
+                        <input type="text" class="input" name="date1" id="date1">
+                    </div>
+                    <!--This is the submit button that submits and calculates all the data and gives an answer -->
+                    <div class="ques1">
+                        <input type="submit" id="submit" value="Submit">
+                    </div>
+                    <br>
+            </form>
+        </main>
+        <footer><!--The black footer at the bottom with info to contact Vasiu Construction -->
+            <ul>
+                <li>Phone: (828) 324-3223 </li>
+                <li>Email: Dvasiu@uncc.edu</li>
+                <li>Find us: Hickory, NC 28602</li>
+            </ul>
+        </footer>
+    </body>
+</html>

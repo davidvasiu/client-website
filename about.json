@@ -1,0 +1,22 @@
+{"about":[
+	{
+		"desc": "The Vasiu family moved from Romania in 2001. We have been in the USA since! Being from Romanian-origin we are hard workers who know the value of hard detailed-oriented work.",
+		"image": "images/flag.jpg",
+		"header": "Romanian origin",
+		"alt": "flagIMG"
+	},
+	{
+		"desc": "Vasiu Construction has been in the business for 15 years, through that time we have gained knowledge and expertise you can't get any other way! We are dedicated to seeing our finished products done well and right, the first time.",
+		"image": "images/craft.jpg",
+		"header": "Dedicated to our Craft",
+		"alt": "craftIMG"
+
+	},
+	{
+		"desc": "Vasiu Construction has been family owned since the beginning, and we plan on keeping it that way. Family is very important to us, and we always try and give a personalized experience rather than a comercial one.",
+		"image": "images/family.jpg",
+		"header": "Family owned",
+		"alt": "familyIMG"
+	}
+
+]}

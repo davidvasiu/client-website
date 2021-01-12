@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--Author: David Vasiu-->
+<!--This is the Home page-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <!--This is the little icon on the tabs in the browser, help with the icon for each page from here: https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/-->
+        <link rel="icon" href="images/miniLogo.JPG">
+        <link rel="stylesheet" href="assignmentStyle.css" />
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="indexScript.js"></script>
+    </head>
+    <body>
+        <header> <!--This header contains the navigation bar and its links to different pages -->
+            <div class="container">
+                <a href="index.html" >
+                <img src="images/logo.png" id="logo" alt="Logo Image of Vasiu Construction"> <!--Logo image (Vasiu Construction) -->
+                </a>
+                <nav>
+                    <ul>
+                        <li><a class="intro" href="index.html">HOME</a></li>
+                        <li><a class="intro" href="gallery.html">GALLERY</a></li>
+                        <li><a class="intro" href="estimates.html">ESTIMATES</a></li>
+                        <li><a class="intro" href="about.html">ABOUT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div> <!--This is the first big image that has the writing on top of it -->
+                <img id="mainImage" src="images/main2.jpg" alt="Image of Spec House">
+                <div class="center">Where <div class="impact">Dream</div> Homes become <div class="impact">Real</div> Homes</div>
+            </div>
+            <div class="bottomHead">The <div class="impact2">Vasiu</div> way </div>
+            <table><!--This is the bottom three portions of image text and body of text that describe what Vasiu Construction stands for -->
+                <tr>
+                    <!-- This is where the vector images go, its being populated by an ajax request. From file: index.json  -->
+                    <!-- Source of first image: Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+                    <!-- Source of third image: Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+                    <td></td>
+                </tr>
+                <tr>
+                    <!-- This is where the header goes, its being populated by an ajax request. From file: index.json -->
+                    <th></th>
+                </tr>
+                <tr>
+                    <!-- This is where the description goes, its being populated by an ajax request. From file: index.json -->
+                    <th></th>
+                </tr>
+            </table>
+        </main>
+        <footer> <!--The black footer at the bottom with info to contact Vasiu Construction -->
+            <ul>
+                <li>Phone: (828) 324-3223 </li>
+                <li>Email: Dvasiu@uncc.edu</li>
+                <li>Find us: Hickory, NC 28602</li>
+            </ul>
+        </footer>
+    </body>
+</html>
